@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ArticleHub</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-brand">
+                <i class="fas fa-book-reader"></i>
+                <a href="index.html">ArticleHub</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to ArticleHub</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search articles...">
+            <button id="searchButton"><i class="fas fa-search"></i> Search</button>
+        </div>
+    </section>
+
+    <main>
+        <section class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="technology">Technology</button>
+            <button class="filter-btn" data-category="science">Science</button>
+            <button class="filter-btn" data-category="culture">Culture</button>
+        </section>
+
+        <section class="articles-grid" id="articlesContainer">
+            <article class="article-card" data-category="technology">
+                <img src="images/javascript.jpg" alt="The Future of AI" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">technology</span>
+                    <h2 class="article-title">The Future of AI</h2>
+                    <p class="article-excerpt">Exploring the latest developments in artificial intelligence and machine learning.</p>
+                    <a href="articles/future-of-ai.html" class="read-btn">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="science">
+                <img src="images/css-grid.jpg" alt="Space Exploration in 2024" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">science</span>
+                    <h2 class="article-title">Space Exploration in 2024</h2>
+                    <p class="article-excerpt">Recent discoveries and upcoming missions in space exploration.</p>
+                    <a href="articles/space-exploration-2024.html" class="read-btn">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="culture">
+                <img src="images/web-dev.jpg" alt="Modern Art Movements" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">culture</span>
+                    <h2 class="article-title">Modern Art Movements</h2>
+                    <p class="article-excerpt">Understanding contemporary art trends and their influence.</p>
+                    <a href="articles/modern-art-movements.html" class="read-btn">Read More</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ArticleHub</h3>
+                <p>Your source for amazing articles</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ArticleHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

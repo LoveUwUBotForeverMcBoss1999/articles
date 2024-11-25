@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - ArticleHub</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-brand">
+                <i class="fas fa-book-reader"></i>
+                <a href="index.html">ArticleHub</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="community-page">
+        <h1 style="text-align: center;">Join Our Community</h1>
+        
+        <section class="community-grid">
+            <div class="community-card">
+                <i class="fas fa-pen-fancy"></i>
+                <h2>Write Articles</h2>
+                <p>Share your knowledge and experiences with our growing community.</p>
+                <button class="primary-btn" onclick="location.href='write-for-us.html';">Start Writing</button>
+            </div>
+        
+            <div class="community-card">
+                <i class="fas fa-comments"></i>
+                <h2>Join Discussions</h2>
+                <p>Engage in meaningful conversations with fellow readers and writers.</p>
+                <button class="primary-btn" onclick="location.href='https://discord.gg/ZJMTZkaUV2';">Join Forum</button>
+            </div>
+        
+            <div class="community-card">
+                <i class="fas fa-user-friends"></i>
+                <h2>Meet Writers</h2>
+                <p>Connect with talented writers from around the world.</p>
+                <button class="primary-btn" onclick="location.href='meet-writers.html';">Browse Writers</button>
+            </div>
+        </section>
+        
+
+        <section class="community-stats">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>0</h3>
+                <p>Community Members</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>0</h3>
+                <p>Published Articles</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-comments"></i>
+                <h3>0</h3>
+                <p>Active Discussions</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content" style="text-align: center;">
+            <div class="footer-section">
+                <h3>ArticleHub</h3>
+                <p>Your source for amazing articles</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ArticleHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
