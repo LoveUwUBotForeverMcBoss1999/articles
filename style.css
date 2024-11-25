@@ -152,6 +152,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    justify-content: center; /* Add this line */
 }
 
 .article-card {
@@ -160,6 +161,8 @@ body {
     overflow: hidden;
     box-shadow: var(--card-shadow);
     width: 100%;
+    max-width: 400px; /* Add this line */
+    margin: 0 auto; /* Add this line */
 }
 
 .article-image {
