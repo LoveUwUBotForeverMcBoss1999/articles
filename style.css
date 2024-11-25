@@ -388,6 +388,22 @@ footer {
         margin: 0 auto;
         max-width: 100%;
     }
+
+    .writers-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .writer-card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    /* Ensure the writer page container is properly centered */
+    .writers-page {
+        padding: 0 1rem;
+    }
 }
 
 /* Community Stats */
@@ -658,6 +674,9 @@ footer {
     overflow: hidden;
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease;
+    /* Add max-width and margin for centering */
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 .writer-card:hover {
